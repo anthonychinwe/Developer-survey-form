@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Developer Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Developer Survey Form</h1>
+        <p id="description">Thanks! Your feedback helps us improve user experience</p>
+        <form action="" id="survey-form">
+            <div>
+                <label for="name" id="name-label" class="formTextColor">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label" class="formTextColor">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="number" id="number-label" class="formTextColor">Phone number</label>
+                <input type="number" name="number" id="number" min="99999" max="99999999999999999"
+                    placeholder="Enter your number">
+            </div>
+
+            <div class="column">
+                <label for="dropdown" class="formTextColor">What is your chosen Tech field?</label>
+                <select name="field" id="dropdown">
+                    <option disabled selected>Please select an option</option>
+                    <option value="front_end">Front-end development</option>
+                    <option value="back_end">Back-end development</option>
+                    <option value="full_stack">Full-stack development</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="professional" class="formTextColor">What is your current level of proficiency in this field?</label>
+                <div class="marginTop">
+                    <input type="radio" name="xp_level" id="professional" value="professional">
+                    <label for="professional" class="formTextColor">Professional</label>
+                </div>
+                <div>
+                    <input type="radio" name="xp_level" id="advanced" value="advanced">
+                    <label for="advanced" class="formTextColor">Advanced</label>
+                </div>
+                <div>
+                    <input type="radio" name="xp_level" id="basic" value="basic">
+                    <label for="basic" class="formTextColor">Basic</label>
+                </div>
+            </div>
+
+            <div class="column">
+                <label for="dropdown2" class="formTextColor">What is your primary motivation for choosing this field?</label>
+                <select name="motive" id="dropdown2">
+                    <option disabled selected>Please select an option</option>
+                    <option value="profession">Profession</option>
+                    <option value="hobby">Hobby</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="bootcamp" class="formTextColor">What platforms do/did you use to learn? (select all that apply)</label>
+                <div class="marginTop">
+                    <input type="checkbox" name="platform" id="bootcamp" value="bootcamp">
+                    <label for="bootcamp" class="formTextColor">Bootcamp</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="platform" id="books" value="books">
+                    <label for="books" class="formTextColor">Books</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="platform" id="youtube" value="youtube">
+                    <label for="youtube" class="formTextColor">YouTube</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="platform" id="ocourse" value="online_course">
+                    <label for="ocourse" class="formTextColor">Online Courses</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="platform" id="doc" value="doc">
+                    <label for="doc" class="formTextColor">Documentation</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="platform" id="project" value="project">
+                    <label for="project" class="formTextColor">Projects</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="platform" id="podcast" value="podcast">
+                    <label for="podcast" class="formTextColor">Podcast</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="txt" class="formTextColor">Any additional comments?</label>
+                <textarea name="comments" id="txt" cols="30" rows="10" placeholder="Leave a comment here"></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
